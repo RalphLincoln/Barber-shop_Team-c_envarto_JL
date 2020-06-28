@@ -19,7 +19,7 @@
     /* Text color */
     cursor: pointer;
     /* Add a mouse pointer on hover */
-    padding: 15px;
+    padding: 5px 13px;
     /* Some padding */
     border-radius: 50%;
     /* Rounded corners */
@@ -31,6 +31,14 @@
     background-color: #ffffff;
     color: black;
     /* Add a dark-grey background on hover */
+}
+
+.mobile-nav{
+    display:none
+}
+li.nav-item {
+    align-items: center;
+    display: flex;
 }
 
 
@@ -274,7 +282,7 @@ span a i {
 }
 
 .box3 .input-group-prepend i {
-    border-bottom: 1px solid #E52992;
+    border-bottom: 1px solid #fff;
 }
 
 
@@ -310,5 +318,14 @@ span a i {
         color: white;
         font-size: 10px;
         padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width:780px){
+    .desktop-nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: inline;
     }
 }
